@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>test-technique</title>
 </head>
 <body>
+
+    <div class="input-container">
+        <label for="mySearch">Entrez le nom d'un Pokemon :</label>
+        <input type="text" id="pokemonInput" name="pokemon" placeholder="Ex: Pikachu" />
+        <button class = "searchButton">Rechercher</button>
+    </div>
+
+    <div class="pokemon-card">
+        <div class="card-header">
+          <h2 class="pokemon-name">Nom du Pokémon</h2>
+          <p class="pokemon-types">Types: </p>
+        </div>
+        <div class="card-image">
+            <!-- L'image sera ajoutée dynamiquement ici -->
+        </div>
+        <div class="card-info">
+            <p class="pokemon-stats">Points de vie</p>
+          <!-- Les stats seront insérées ici -->
+        </div>
+      </div>
     
 </body>
+<script src="script.js"></script>
 </html>
