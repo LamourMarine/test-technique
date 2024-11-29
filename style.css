@@ -5,22 +5,33 @@
   }
 
 body {
+    background-image: url(assets/background_Poke.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around; 
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
   .pokemon-card {
-    width: 30%;
+    background-color: rgba(245, 245, 220, 0.73);
+    width: 20%;
     position: relative;
     height: 50vh;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    border-radius: 30px;
+    border: 18px solid #DCB253;
   }
 
   .card-header {
@@ -31,16 +42,38 @@ body {
     height: 60px;
   }
 
-  .pokemon-name {
+  #pokemonInput{
+    max-width: 400px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin-left: 30px;
   }
 
-  .pokemon-types {
-  }
+.searchButton{
+    height: 45%;
+    border-radius: 8px;
+
+}
 
   .card-image {
     height: 40%;
     width: 100%;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-image {
+    background-color: rgba(240, 255, 255, 0.315);
+    max-width: 70%;
+    margin: auto;
+    border: 8px solid #DCB253;
   }
 
   img{
@@ -51,5 +84,58 @@ body {
   .card-info {
     height: 50%;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
+    
+  }
+
+  .card-info ul {
+  gap: 10px; 
+  padding-left: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-info li{
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  flex: 1 1 calc(50% - 40px);
+  margin-left: 20px;
+}
+
+.card-info li .stat-value {
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+.pokemon-stats {
+    font-weight:bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.errorText {
+    background-color: #f0f0f0ec;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 0px;
+    display: none;
+
+}
+
+.show {
+    display: block;
+}
+
+label {
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    color: #333; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    display: block; 
+    text-align: center; 
   }
